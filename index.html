@@ -1,0 +1,299 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4350f77c0f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="Container">
+           <nav>
+              <p class="logo">Dhanush.</p>
+               <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             
+           </nav>
+           <div class="header-text">
+            <p id="role" class="fade"> Web developer</p>
+            <h1>Hi, I'm <span>Dhanush</span><br> From Avadi </h1>
+           </div>
+        </div>
+    </div> 
+<!-------------------------------about----->    
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/ken.jpg" >
+                </div>
+                <div class="col2">
+                    <h1 class="sub">About Me</h1>
+                    <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Velit quas fugiat dicta ipsa odio reprehenderit,
+                          veniam consectetur inventore labore, adipisci pariatur aliquam laudantium rem quibusdam temporibus 
+                        impedit eius architecto amet.</p>
+                        <div class="titles">
+                            <p class="links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="links" onclick="opentab('Experience')">Experience</p>
+                            <p class="links" onclick="opentab('Education')">Education</p>
+
+                        </div>
+                        <div class="contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Desinging Web/App interfaces</li>
+                                <li><span>App Development</span><br>Desinging Web/App interfaces</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="contents" id="Experience">
+                            <ul>
+                                <li><span>UI?UX</span><br>/App interfaces</li>
+                                <li><span>Web Development</span><br>Desinging Web/App interfaces</li>
+                                <li><span>App Development</span><br>Desinging Web/App interfaces</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="contents" id="Education">
+                            <ul>
+                                <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Desinging Web/App interfaces</li>
+                                <li><span>App Development</span><br>/App interfaces</li>
+
+                            </ul>
+                        </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div> 
+    <!----service---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga quisquam veritatis iste. Est ipsum <br>
+                        nobis esse eius ratione, ut distinctio saepe, pariatur nostrum perferendis maiores nesciunt culpa assumenda voluptates?</p>
+                        <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-duotone fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga quisquam veritatis iste. Est ipsum <br>
+                        nobis esse eius ratione, ut distinctio saepe, pariatur nostrum perferendis maiores nesciunt culpa assumenda voluptates?</p>
+                        <a href="#">Learn more</a>
+                </div>
+   
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga quisquam veritatis iste. Est ipsum <br>
+                        nobis esse eius ratione, ut distinctio saepe, pariatur nostrum perferendis maiores nesciunt culpa assumenda voluptates?</p>
+                        <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+     <!----------------portfolio-->
+                 <div id="portfolio">
+                    <div class="container">
+                        <h1>My Work</h1>
+                        <div class="work-list">
+                            <div class="work">
+                                <img src="images/sukuna.jpg" id="sukuna" >
+                                <div class="layer">
+                                    <h3>Social Media App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="work" >
+                                <img src="images/toji.webp" id="toji" >
+                                <div class="layer">
+                                    <h3>Music App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="work" id="gojo">
+                                <img src="images/purple.jpg" >
+                                <div class="layer">
+                                    <h3>Online Shoping App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+
+                 </div> 
+
+<!---------contact-->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Contact Me</h1>
+                <p><a href="mailto:dhanu2004416@gmail.com"><i class="fa-solid fa-envelope"></i></a>dhanu2004416@gmail.com</p>
+                <p ></a><i class="fa-solid fa-phone" ><a href="tel:+917550142297"></a></i>+91 7550142297</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/zorosanjiluffy"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dhanush-u-7549072b3/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+       <a href="images/dhanush (2).pdf" download="" class="btn btn2">Download <span class="u-bolder">CV</span></a>
+                
+            </div>
+            <div class="contact-right">
+                <form id="contactform" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4df6a5fd-7775-4b51-9f08-aaede96f2326">
+                    <input type="text" name="Name" placeholder="Your Name" id="name"  required>
+                    <input type="email" name="email" placeholder="Your Email" id="email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" id></textarea>
+                    <button type="submit" class="btn btn2" onclick="emailjs">Submit</button>
+                </form>
+                <div id="result"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-sharp fa-regular fa-copyright"></i> Dhanush</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("links")
+        var tabcontents=document.getElementsByClassName("contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+                
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+var sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right="0";
+
+
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+    
+
+}
+
+    </script>
+    <script>
+        document.getElementById('contactform').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+    
+            const formData = new FormData(this);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            
+            const result = document.getElementById('result'); // Assuming you have an element to show results
+            result.innerHTML = "Please wait...";
+    
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Form submitted successfully";
+                    this.reset(); // Reset form fields
+                } else {
+                    console.log(response);
+                    result.innerHTML = jsonResponse.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .finally(() => {
+                setTimeout(() => {
+                    result.style.display = "none"; // Hide result message after a few seconds
+                }, 3000);
+            });
+        });
+    </script>
+   <script>
+    const roles = ["Web Developer", "UI/UX Designer", "App Developer", "Full Stack Developer"];
+    let currentIndex = 0;
+
+    function changeRole() {
+        const roleElement = document.getElementById("role");
+        
+        // Start fading out
+        roleElement.classList.add("hidden");
+        
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % roles.length; // Update role index
+            roleElement.innerText = roles[currentIndex]; // Change role text
+            
+            // Start fading in
+            roleElement.classList.remove("hidden");
+        }, 500); // Wait for the fade-out duration (0.5s) before changing text
+    }
+
+    // Change role every 3 seconds
+    setInterval(changeRole, 5000); // Adjust the time (in milliseconds) as needed
+</script>
+
+    
+    
+
+
+
+    
+</body>
+</html> 
+
+
